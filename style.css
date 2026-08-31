@@ -159,7 +159,7 @@ nav a.active:after{
   border-radius:28px;
   background:
     linear-gradient(rgba(0,63,50,.20),rgba(0,63,50,.20)),
-    url('logo.jpg') center/cover no-repeat;
+    url('logo.jpeg') center/cover no-repeat;
   border:1px solid rgba(255,255,255,.18);
   box-shadow:0 30px 80px rgba(0,0,0,.30);
   position:relative;
