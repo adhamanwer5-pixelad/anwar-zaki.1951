@@ -2,7 +2,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="description" content="مكتب المحاسب القانوني أنور زكي للمحاسبة والاستشارات المالية. خدمات المحاسبة والإقرارات الضريبية والاستشارات المالية للأفراد والشركات.">  <title>أنور زكي | للمحاسبة والاستشارات المالية</title>  <link rel="canonical" href="https://adhamanwer5-pixelad.github.io/anwar-zaki.1951/">  <link rel="stylesheet" href="style.css">
-  <meta name="keywords" content="السويس,محاسب في السويس ,أنور زكي, مكتب أنور زكي, محاسبة, استشارات مالية, إقرارات ضريبية, محاسب">
+  <meta name="keywords" content="أنور زكي, مكتب أنور زكي, محاسبة, استشارات مالية, إقرارات ضريبية, محاسب">
+
+<style>
+.jobs {
+  background: #f7f7f5;
+}
+
+.jobs-box {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: start;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.06);
+}
+
+.jobs-info h3 {
+  margin-bottom: 15px;
+}
+
+.jobs-info p {
+  line-height: 1.9;
+}
+
+.jobs-info ul {
+  margin: 20px 0 0;
+  padding-right: 20px;
+  line-height: 2;
+}
+
+#jobForm {
+  display: grid;
+  gap: 14px;
+}
+
+#jobForm input,
+#jobForm select,
+#jobForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #fff;
+}
+
+#jobForm textarea {
+  resize: vertical;
+}
+
+.file-label {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+#jobForm input[type="file"] {
+  padding: 10px;
+}
+
+.form-note {
+  display: block;
+  line-height: 1.7;
+  opacity: .75;
+  margin-top: -4px;
+}
+
+@media (max-width: 800px) {
+  .jobs-box {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+}
+</style>
+
 </head><body><!-- =========================
      Navbar
 ========================= --><header class="navbar">
@@ -17,7 +94,8 @@
   <a href="#founder">المؤسس</a>
   <a href="#team">فريق العمل</a>
   <a href="#blog">المدونة</a>
-  <a href="#contact">تواصل معنا</a>
+  <a href="#jobs">الوظائف</a>
+    <a href="#contact">تواصل معنا</a>
 </nav>
 
 <a class="nav-btn" href="#contact">
@@ -97,7 +175,7 @@
 </div>
 
 <div>
-  <strong>5000+</strong>
+  <strong>1000+</strong>
   <span>عميل وثق بنا</span>
 </div>
 
@@ -447,7 +525,84 @@
 
   </div></section><!-- =========================
      Contact
-========================= --><section id="contact" class="contact section">  <div class="container contact-box"><div>
+========================= -->
+<!-- =========================
+     Jobs / Careers
+========================= -->
+<section id="jobs" class="section jobs">
+  <div class="container">
+    <div class="section-head">
+      <span>الوظائف</span>
+      <h2>انضم إلى فريق العمل</h2>
+      <p>
+        نبحث دائمًا عن الكفاءات المميزة للانضمام إلى فريق أنور زكي.
+        إذا كنت ترغب في العمل معنا، أرسل بياناتك وسيرتك الذاتية.
+      </p>
+    </div>
+
+    <div class="jobs-box">
+      <div class="jobs-info">
+        <h3>تقدم للعمل معنا</h3>
+        <p>
+          املأ البيانات التالية وسنراجع طلبك ونتواصل معك في حالة وجود فرصة
+          مناسبة لمؤهلاتك.
+        </p>
+        <ul>
+          <li>محاسب</li>
+          <li>مراجع حسابات</li>
+          <li>محاسب ضرائب</li>
+          <li>وظائف إدارية</li>
+          <li>وظائف أخرى</li>
+        </ul>
+      </div>
+
+      <form id="jobForm" action="https://formsubmit.co/adhamanwer5@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="طلب توظيف جديد من موقع أنور زكي">
+        <input type="hidden" name="_next" value="https://adhamanwer5-pixelad.github.io/anwar-zaki.1951/#jobs">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+
+        <input type="text" name="name" placeholder="الاسم بالكامل" required>
+
+        <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+
+        <select name="position" required>
+          <option value="">اختر الوظيفة المطلوبة</option>
+          <option value="محاسب">محاسب</option>
+          <option value="مراجع حسابات">مراجع حسابات</option>
+          <option value="محاسب ضرائب">محاسب ضرائب</option>
+          <option value="وظائف إدارية">وظائف إدارية</option>
+          <option value="أخرى">أخرى</option>
+        </select>
+
+        <textarea
+          name="experience"
+          placeholder="اكتب نبذة عن خبراتك ومؤهلاتك..."
+          rows="5"
+          required></textarea>
+
+        <label class="file-label" for="cv">
+          السيرة الذاتية (CV) - PDF
+        </label>
+        <input
+          id="cv"
+          type="file"
+          name="cv"
+          accept=".pdf,application/pdf"
+          required>
+
+        <button class="btn primary" type="submit">
+          إرسال طلب التوظيف
+        </button>
+        <small class="form-note">بعد الإرسال سيتم تحويلك للصفحة الرئيسية، وستصل البيانات إلى إدارة المكتب.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact section">  <div class="container contact-box"><div>
 
   <div class="eyebrow">
     تواصل معنا
@@ -465,7 +620,12 @@
 </div>
 
 
-<form id="contactForm">
+<form id="contactForm" action="https://formsubmit.co/adhamanwer5@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="رسالة جديدة من موقع أنور زكي">
+  <input type="hidden" name="_next" value="https://adhamanwer5-pixelad.github.io/anwar-zaki.1951/#contact">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_template" value="table">
+
 
   <input
     type="text"
@@ -583,13 +743,13 @@
   </p>
 
   <p>
-    📍 السويس شارع الجلاء بعماره العسكري ، مصر
+    📍 السويس شارع الجلاء بعماره العسكري، مصر
   </p>
   
-  <p>
-    📍 السويس 8 ش سينا ، مصر
+ <p>
+    📍 السويس 8 شارع سينا ، مصر
   </p>
-   
+
 </div>
 
   </div>  <div class="copyright">
@@ -643,6 +803,8 @@ form.addEventListener('submit', function(event) {
   form.reset();
 
 });
+
+
 
 </script></body>
 </html>
